@@ -132,8 +132,6 @@ body {
   align-items: center;
   gap: 50px;
 
-  list-style-type: none;
-  text-decoration: none;
 }
 .header-contacts {
   display: block;
@@ -164,7 +162,9 @@ body {
 }
 
 .hero-title {
-  margin: 0 auto 30px;
+      margin-left: auto;
+        margin-right: auto;
+            margin-bottom: 30px;
   max-width: 690px;
 
   color: var(--hero-title-color);
@@ -185,7 +185,8 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  padding-inline-start: 0;
+      padding: 0;
+        margin: 0;
 }
 .examples-item {
   width: 370px;
@@ -205,6 +206,7 @@ body {
   letter-spacing: 0.06em;
   padding-top: 20px;
   padding-left: 24px;
+  padding-bottom: 4px;
 }
 
 .portfolio-des {
@@ -307,6 +309,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .list-text {
   color: var(--primary-text-color);
