@@ -63,12 +63,13 @@
     </header>
     <!-- Унікальний контент сторінки -->
     <main>
-
       <!-- Герой -->
 
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button primary">Замовити послугу</button>
+        <button data-modal-open type="button" class="button primary">
+          Замовити послугу
+        </button>
       </section>
 
       <!--Переваги -->
@@ -463,8 +464,16 @@
         </div>
       </div>
     </footer>
-
-    <!--Модальне вікно-->
-<script src="./js/modal.js"></script>
+    <!-- Модальне вікно -->
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="botton-close">
+          <svg class="x-close">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
